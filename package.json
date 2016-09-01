@@ -25,7 +25,7 @@
   "dependencies": {
     "cli-table2": "0.2.0",
     "colors": "1.1.2",
-    "express": "3.21.2",
+    "express": "4.14.0",
     "http-proxy": "1.14.0",
     "lodash": "2.4",
     "optimist": "0.6.1"

@@ -8,7 +8,7 @@ var path = require('path'),
 
 // Parse command line parameters
 var argv = optimist
-    .usage('Usage: $0 -b [backend] -p [port] -d [document-root]')
+    .usage('Usage: $0 -b [backend] -p [port] -d [document-root] -s [filename]')
     .options('p', {
         alias: 'port',
         'default': 8443,
@@ -26,6 +26,11 @@ var argv = optimist
     .options('d', {
         alias: 'document-root',
         describe: 'document root directory to use'
+    })
+    .options('s', {
+        alias: 'save',
+        'default': 'testData.txt',
+        describe: 'file name to save API traffic to'
     })
     .argv;
 
