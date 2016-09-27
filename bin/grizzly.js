@@ -43,6 +43,7 @@ if (argv.h) {
 var port = argv.p,
     rootDir = argv.d,
     backendHost = argv.b,
+    testDataFile = argv.s,
     stubFilePath;
 
 var documentRoot = argv.d;
@@ -60,7 +61,8 @@ if (!fs.existsSync(documentRoot)) {
 var options = {
     host: backendHost,
     port: port,
-    root: documentRoot
+    root: documentRoot,
+    file: testDataFile
 };
 var grizzly = new Grizzly(options);
 
